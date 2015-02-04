@@ -35,6 +35,9 @@ function! RunLastSpec()
   endif
 endfunction
 
+function! RunSpecs(spec_location)
+  call s:RunSpecs(a:spec_location)
+endfunction
 " === local functions ===
 
 function! s:RunSpecs(spec_location)
